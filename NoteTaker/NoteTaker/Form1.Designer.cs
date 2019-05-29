@@ -22,37 +22,23 @@
         private void InitializeComponent()
         {
             this.TOP_PNL = new System.Windows.Forms.Panel();
+            this.current_panelName = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.minBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
             this.MENU_BTN_PNL = new System.Windows.Forms.Panel();
-            this.menuBtn5 = new System.Windows.Forms.Button();
             this.menuBtn4 = new System.Windows.Forms.Button();
             this.menuBtn3 = new System.Windows.Forms.Button();
             this.menuBtn2 = new System.Windows.Forms.Button();
             this.menuBtn1 = new System.Windows.Forms.Button();
             this.MENU_PNL = new System.Windows.Forms.Panel();
             this.pnl1 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.saveBtn = new System.Windows.Forms.Button();
+            this.EDIT_MENU_PNL = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.circularProgressBar2 = new CircularProgressBar.CircularProgressBar();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.container_Pnl = new System.Windows.Forms.Panel();
             this.pnl5 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
@@ -114,17 +100,13 @@
             this.circularProgressBar4 = new CircularProgressBar.CircularProgressBar();
             this.button32 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
-            this.current_panelName = new System.Windows.Forms.Label();
             this.TOP_PNL.SuspendLayout();
             this.MENU_BTN_PNL.SuspendLayout();
             this.MENU_PNL.SuspendLayout();
+            this.pnl1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.EDIT_MENU_PNL.SuspendLayout();
             this.pnl2.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.container_Pnl.SuspendLayout();
             this.pnl5.SuspendLayout();
             this.panel25.SuspendLayout();
@@ -158,13 +140,27 @@
             this.TOP_PNL.Controls.Add(this.exitBtn);
             this.TOP_PNL.Dock = System.Windows.Forms.DockStyle.Top;
             this.TOP_PNL.Location = new System.Drawing.Point(0, 0);
+            this.TOP_PNL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TOP_PNL.Name = "TOP_PNL";
-            this.TOP_PNL.Size = new System.Drawing.Size(1674, 61);
+            this.TOP_PNL.Size = new System.Drawing.Size(1116, 41);
             this.TOP_PNL.TabIndex = 6;
             this.TOP_PNL.Paint += new System.Windows.Forms.PaintEventHandler(this.TopPnl_Paint);
             this.TOP_PNL.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPnl_MouseDown);
             this.TOP_PNL.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPnl_MouseMove);
             this.TOP_PNL.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TopPnl_MouseUp);
+            // 
+            // current_panelName
+            // 
+            this.current_panelName.AutoSize = true;
+            this.current_panelName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.current_panelName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.current_panelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.current_panelName.Location = new System.Drawing.Point(238, 0);
+            this.current_panelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.current_panelName.Name = "current_panelName";
+            this.current_panelName.Size = new System.Drawing.Size(75, 37);
+            this.current_panelName.TabIndex = 0;
+            this.current_panelName.Text = "Add";
             // 
             // button7
             // 
@@ -180,8 +176,9 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.Location = new System.Drawing.Point(0, 0);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(357, 61);
+            this.button7.Size = new System.Drawing.Size(238, 41);
             this.button7.TabIndex = 14;
             this.button7.Text = "NoteTaker";
             this.button7.UseVisualStyleBackColor = false;
@@ -197,9 +194,10 @@
             this.minBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minBtn.ForeColor = System.Drawing.Color.Black;
-            this.minBtn.Location = new System.Drawing.Point(1578, 0);
+            this.minBtn.Location = new System.Drawing.Point(1052, 0);
+            this.minBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.minBtn.Name = "minBtn";
-            this.minBtn.Size = new System.Drawing.Size(48, 61);
+            this.minBtn.Size = new System.Drawing.Size(32, 41);
             this.minBtn.TabIndex = 13;
             this.minBtn.Text = "-";
             this.minBtn.UseVisualStyleBackColor = false;
@@ -216,9 +214,10 @@
             this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.Color.White;
-            this.exitBtn.Location = new System.Drawing.Point(1626, 0);
+            this.exitBtn.Location = new System.Drawing.Point(1084, 0);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(48, 61);
+            this.exitBtn.Size = new System.Drawing.Size(32, 41);
             this.exitBtn.TabIndex = 10;
             this.exitBtn.Text = "X";
             this.exitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,40 +228,16 @@
             // 
             this.MENU_BTN_PNL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
             this.MENU_BTN_PNL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MENU_BTN_PNL.Controls.Add(this.menuBtn5);
             this.MENU_BTN_PNL.Controls.Add(this.menuBtn4);
             this.MENU_BTN_PNL.Controls.Add(this.menuBtn3);
             this.MENU_BTN_PNL.Controls.Add(this.menuBtn2);
             this.MENU_BTN_PNL.Controls.Add(this.menuBtn1);
             this.MENU_BTN_PNL.Dock = System.Windows.Forms.DockStyle.Left;
             this.MENU_BTN_PNL.Location = new System.Drawing.Point(0, 0);
+            this.MENU_BTN_PNL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MENU_BTN_PNL.Name = "MENU_BTN_PNL";
-            this.MENU_BTN_PNL.Size = new System.Drawing.Size(357, 863);
+            this.MENU_BTN_PNL.Size = new System.Drawing.Size(238, 452);
             this.MENU_BTN_PNL.TabIndex = 5;
-            // 
-            // menuBtn5
-            // 
-            this.menuBtn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(244)))), ((int)(((byte)(149)))));
-            this.menuBtn5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuBtn5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
-            this.menuBtn5.FlatAppearance.BorderSize = 0;
-            this.menuBtn5.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.menuBtn5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
-            this.menuBtn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
-            this.menuBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menuBtn5.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
-            this.menuBtn5.ForeColor = System.Drawing.Color.White;
-            this.menuBtn5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menuBtn5.Location = new System.Drawing.Point(0, 436);
-            this.menuBtn5.Margin = new System.Windows.Forms.Padding(0);
-            this.menuBtn5.Name = "menuBtn5";
-            this.menuBtn5.Size = new System.Drawing.Size(357, 109);
-            this.menuBtn5.TabIndex = 10;
-            this.menuBtn5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menuBtn5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.menuBtn5.UseCompatibleTextRendering = true;
-            this.menuBtn5.UseVisualStyleBackColor = false;
-            this.menuBtn5.Click += new System.EventHandler(this.MenuBtn5_Click);
             // 
             // menuBtn4
             // 
@@ -277,10 +252,10 @@
             this.menuBtn4.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuBtn4.ForeColor = System.Drawing.Color.White;
             this.menuBtn4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menuBtn4.Location = new System.Drawing.Point(0, 327);
+            this.menuBtn4.Location = new System.Drawing.Point(0, 219);
             this.menuBtn4.Margin = new System.Windows.Forms.Padding(0);
             this.menuBtn4.Name = "menuBtn4";
-            this.menuBtn4.Size = new System.Drawing.Size(357, 109);
+            this.menuBtn4.Size = new System.Drawing.Size(238, 73);
             this.menuBtn4.TabIndex = 9;
             this.menuBtn4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menuBtn4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -301,10 +276,10 @@
             this.menuBtn3.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuBtn3.ForeColor = System.Drawing.Color.White;
             this.menuBtn3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menuBtn3.Location = new System.Drawing.Point(0, 218);
+            this.menuBtn3.Location = new System.Drawing.Point(0, 146);
             this.menuBtn3.Margin = new System.Windows.Forms.Padding(0);
             this.menuBtn3.Name = "menuBtn3";
-            this.menuBtn3.Size = new System.Drawing.Size(357, 109);
+            this.menuBtn3.Size = new System.Drawing.Size(238, 73);
             this.menuBtn3.TabIndex = 8;
             this.menuBtn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menuBtn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -325,10 +300,10 @@
             this.menuBtn2.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuBtn2.ForeColor = System.Drawing.Color.White;
             this.menuBtn2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menuBtn2.Location = new System.Drawing.Point(0, 109);
+            this.menuBtn2.Location = new System.Drawing.Point(0, 73);
             this.menuBtn2.Margin = new System.Windows.Forms.Padding(0);
             this.menuBtn2.Name = "menuBtn2";
-            this.menuBtn2.Size = new System.Drawing.Size(357, 109);
+            this.menuBtn2.Size = new System.Drawing.Size(238, 73);
             this.menuBtn2.TabIndex = 7;
             this.menuBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menuBtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -352,7 +327,7 @@
             this.menuBtn1.Location = new System.Drawing.Point(0, 0);
             this.menuBtn1.Margin = new System.Windows.Forms.Padding(0);
             this.menuBtn1.Name = "menuBtn1";
-            this.menuBtn1.Size = new System.Drawing.Size(357, 109);
+            this.menuBtn1.Size = new System.Drawing.Size(238, 73);
             this.menuBtn1.TabIndex = 6;
             this.menuBtn1.Text = "Add Note";
             this.menuBtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -366,428 +341,106 @@
             this.MENU_PNL.BackColor = System.Drawing.Color.Black;
             this.MENU_PNL.Controls.Add(this.MENU_BTN_PNL);
             this.MENU_PNL.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MENU_PNL.Location = new System.Drawing.Point(0, 61);
+            this.MENU_PNL.Location = new System.Drawing.Point(0, 41);
+            this.MENU_PNL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MENU_PNL.Name = "MENU_PNL";
-            this.MENU_PNL.Size = new System.Drawing.Size(357, 863);
+            this.MENU_PNL.Size = new System.Drawing.Size(238, 452);
             this.MENU_PNL.TabIndex = 3;
             // 
             // pnl1
             // 
             this.pnl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(244)))), ((int)(((byte)(200)))));
+            this.pnl1.Controls.Add(this.panel1);
+            this.pnl1.Controls.Add(this.EDIT_MENU_PNL);
             this.pnl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl1.ForeColor = System.Drawing.Color.Silver;
             this.pnl1.Location = new System.Drawing.Point(0, 0);
-            this.pnl1.MinimumSize = new System.Drawing.Size(1317, 0);
+            this.pnl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl1.MinimumSize = new System.Drawing.Size(878, 0);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(1317, 863);
+            this.pnl1.Size = new System.Drawing.Size(878, 452);
             this.pnl1.TabIndex = 19;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.saveBtn);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 325);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(878, 127);
+            this.panel1.TabIndex = 7;
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(244)))), ((int)(((byte)(149)))));
+            this.saveBtn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.saveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
+            this.saveBtn.FlatAppearance.BorderSize = 0;
+            this.saveBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.saveBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
+            this.saveBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
+            this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveBtn.ForeColor = System.Drawing.Color.White;
+            this.saveBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveBtn.Location = new System.Drawing.Point(0, 0);
+            this.saveBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(141, 127);
+            this.saveBtn.TabIndex = 6;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.saveBtn.UseCompatibleTextRendering = true;
+            this.saveBtn.UseVisualStyleBackColor = false;
+            // 
+            // EDIT_MENU_PNL
+            // 
+            this.EDIT_MENU_PNL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(219)))), ((int)(((byte)(149)))));
+            this.EDIT_MENU_PNL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EDIT_MENU_PNL.Controls.Add(this.textBox1);
+            this.EDIT_MENU_PNL.Dock = System.Windows.Forms.DockStyle.Top;
+            this.EDIT_MENU_PNL.Location = new System.Drawing.Point(0, 0);
+            this.EDIT_MENU_PNL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDIT_MENU_PNL.Name = "EDIT_MENU_PNL";
+            this.EDIT_MENU_PNL.Size = new System.Drawing.Size(878, 403);
+            this.EDIT_MENU_PNL.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 54);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(846, 236);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // pnl2
             // 
             this.pnl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pnl2.Controls.Add(this.panel5);
-            this.pnl2.Controls.Add(this.panel10);
+            this.pnl2.Controls.Add(this.label1);
             this.pnl2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl2.ForeColor = System.Drawing.Color.Silver;
-            this.pnl2.Location = new System.Drawing.Point(1317, 0);
-            this.pnl2.MinimumSize = new System.Drawing.Size(1317, 0);
+            this.pnl2.Location = new System.Drawing.Point(878, 0);
+            this.pnl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl2.MinimumSize = new System.Drawing.Size(878, 0);
             this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(1317, 863);
+            this.pnl2.Size = new System.Drawing.Size(878, 452);
             this.pnl2.TabIndex = 20;
             // 
-            // panel5
+            // label1
             // 
-            this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Controls.Add(this.panel8);
-            this.panel5.Controls.Add(this.panel9);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.ForeColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(0, 641);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1317, 222);
-            this.panel5.TabIndex = 21;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Gray;
-            this.panel8.Controls.Add(this.button6);
-            this.panel8.Controls.Add(this.button8);
-            this.panel8.Controls.Add(this.button9);
-            this.panel8.Controls.Add(this.button10);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.ForeColor = System.Drawing.Color.Silver;
-            this.panel8.Location = new System.Drawing.Point(1000, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(317, 222);
-            this.panel8.TabIndex = 11;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.AliceBlue;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 147);
-            this.button6.Margin = new System.Windows.Forms.Padding(0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(317, 75);
-            this.button6.TabIndex = 14;
-            this.button6.Text = "$0.00";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseCompatibleTextRendering = true;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.AliceBlue;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 96);
-            this.button8.Margin = new System.Windows.Forms.Padding(0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(317, 51);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "$0.00";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseCompatibleTextRendering = true;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.AliceBlue;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(0, 44);
-            this.button9.Margin = new System.Windows.Forms.Padding(0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(317, 52);
-            this.button9.TabIndex = 12;
-            this.button9.Text = "$0.00";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseCompatibleTextRendering = true;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.AliceBlue;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(0, 0);
-            this.button10.Margin = new System.Windows.Forms.Padding(0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(317, 44);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "$0.00";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button10.UseCompatibleTextRendering = true;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Gray;
-            this.panel9.Controls.Add(this.button11);
-            this.panel9.Controls.Add(this.button12);
-            this.panel9.Controls.Add(this.button13);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.ForeColor = System.Drawing.Color.Silver;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1317, 222);
-            this.panel9.TabIndex = 10;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(0, 96);
-            this.button11.Margin = new System.Windows.Forms.Padding(0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(1317, 51);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "USAA SAVINGS";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button11.UseCompatibleTextRendering = true;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(0, 44);
-            this.button12.Margin = new System.Windows.Forms.Padding(0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(1317, 52);
-            this.button12.TabIndex = 9;
-            this.button12.Text = "USAA CHECKING";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button12.UseCompatibleTextRendering = true;
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(0, 0);
-            this.button13.Margin = new System.Windows.Forms.Padding(0);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(1317, 44);
-            this.button13.TabIndex = 8;
-            this.button13.Text = "CHASE";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button13.UseCompatibleTextRendering = true;
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Silver;
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.panel14);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.ForeColor = System.Drawing.Color.Silver;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1317, 174);
-            this.panel10.TabIndex = 18;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Black;
-            this.panel11.Controls.Add(this.circularProgressBar1);
-            this.panel11.Controls.Add(this.button14);
-            this.panel11.Controls.Add(this.button15);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.ForeColor = System.Drawing.Color.Silver;
-            this.panel11.Location = new System.Drawing.Point(644, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(673, 174);
-            this.panel11.TabIndex = 13;
-            // 
-            // circularProgressBar1
-            // 
-            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBar1.AnimationSpeed = 500;
-            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.circularProgressBar1.InnerMargin = 2;
-            this.circularProgressBar1.InnerWidth = -1;
-            this.circularProgressBar1.Location = new System.Drawing.Point(487, 0);
-            this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
-            this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.Color.Gray;
-            this.circularProgressBar1.OuterMargin = -25;
-            this.circularProgressBar1.OuterWidth = 26;
-            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.circularProgressBar1.ProgressWidth = 25;
-            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.circularProgressBar1.Size = new System.Drawing.Size(186, 174);
-            this.circularProgressBar1.StartAngle = 270;
-            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.circularProgressBar1.SubscriptText = "";
-            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.circularProgressBar1.SuperscriptText = "";
-            this.circularProgressBar1.TabIndex = 16;
-            this.circularProgressBar1.Text = "$99.99";
-            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.circularProgressBar1.Value = 90;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.AliceBlue;
-            this.button14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(292, 0);
-            this.button14.Margin = new System.Windows.Forms.Padding(0);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(166, 174);
-            this.button14.TabIndex = 14;
-            this.button14.Text = "$0.00";
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseCompatibleTextRendering = true;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(0, 0);
-            this.button15.Margin = new System.Windows.Forms.Padding(0);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(292, 174);
-            this.button15.TabIndex = 11;
-            this.button15.Text = "TD_BANK";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button15.UseCompatibleTextRendering = true;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.Gray;
-            this.panel14.Controls.Add(this.circularProgressBar2);
-            this.panel14.Controls.Add(this.button16);
-            this.panel14.Controls.Add(this.button18);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel14.ForeColor = System.Drawing.Color.Silver;
-            this.panel14.Location = new System.Drawing.Point(0, 0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(644, 174);
-            this.panel14.TabIndex = 12;
-            // 
-            // circularProgressBar2
-            // 
-            this.circularProgressBar2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBar2.AnimationSpeed = 500;
-            this.circularProgressBar2.BackColor = System.Drawing.Color.Black;
-            this.circularProgressBar2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.circularProgressBar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.circularProgressBar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.circularProgressBar2.InnerMargin = 2;
-            this.circularProgressBar2.InnerWidth = -1;
-            this.circularProgressBar2.Location = new System.Drawing.Point(458, 0);
-            this.circularProgressBar2.MarqueeAnimationSpeed = 2000;
-            this.circularProgressBar2.Name = "circularProgressBar2";
-            this.circularProgressBar2.OuterColor = System.Drawing.Color.Gray;
-            this.circularProgressBar2.OuterMargin = -25;
-            this.circularProgressBar2.OuterWidth = 26;
-            this.circularProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.circularProgressBar2.ProgressWidth = 25;
-            this.circularProgressBar2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.circularProgressBar2.Size = new System.Drawing.Size(186, 174);
-            this.circularProgressBar2.StartAngle = 270;
-            this.circularProgressBar2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar2.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.circularProgressBar2.SubscriptText = "";
-            this.circularProgressBar2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar2.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.circularProgressBar2.SuperscriptText = "";
-            this.circularProgressBar2.TabIndex = 15;
-            this.circularProgressBar2.Text = "$99.99";
-            this.circularProgressBar2.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.circularProgressBar2.Value = 90;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.AliceBlue;
-            this.button16.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(113, 0);
-            this.button16.Margin = new System.Windows.Forms.Padding(0);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(166, 174);
-            this.button16.TabIndex = 14;
-            this.button16.Text = "$0.00";
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseCompatibleTextRendering = true;
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.SlateGray;
-            this.button18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(66)))));
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(0, 0);
-            this.button18.Margin = new System.Windows.Forms.Padding(0);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(113, 174);
-            this.button18.TabIndex = 11;
-            this.button18.Text = "2";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseCompatibleTextRendering = true;
-            this.button18.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F);
+            this.label1.Location = new System.Drawing.Point(177, 182);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(412, 108);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "PANEL2";
             // 
             // container_Pnl
             // 
@@ -798,9 +451,10 @@
             this.container_Pnl.Controls.Add(this.pnl2);
             this.container_Pnl.Controls.Add(this.pnl1);
             this.container_Pnl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.container_Pnl.Location = new System.Drawing.Point(357, 61);
+            this.container_Pnl.Location = new System.Drawing.Point(238, 41);
+            this.container_Pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.container_Pnl.Name = "container_Pnl";
-            this.container_Pnl.Size = new System.Drawing.Size(1317, 863);
+            this.container_Pnl.Size = new System.Drawing.Size(878, 452);
             this.container_Pnl.TabIndex = 7;
             // 
             // pnl5
@@ -810,10 +464,11 @@
             this.pnl5.Controls.Add(this.panel28);
             this.pnl5.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl5.ForeColor = System.Drawing.Color.Silver;
-            this.pnl5.Location = new System.Drawing.Point(5268, 0);
-            this.pnl5.MinimumSize = new System.Drawing.Size(1317, 0);
+            this.pnl5.Location = new System.Drawing.Point(3512, 0);
+            this.pnl5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl5.MinimumSize = new System.Drawing.Size(878, 0);
             this.pnl5.Name = "pnl5";
-            this.pnl5.Size = new System.Drawing.Size(1317, 863);
+            this.pnl5.Size = new System.Drawing.Size(878, 452);
             this.pnl5.TabIndex = 23;
             // 
             // panel25
@@ -823,9 +478,10 @@
             this.panel25.Controls.Add(this.panel27);
             this.panel25.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel25.ForeColor = System.Drawing.Color.Silver;
-            this.panel25.Location = new System.Drawing.Point(0, 641);
+            this.panel25.Location = new System.Drawing.Point(0, 304);
+            this.panel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(1317, 222);
+            this.panel25.Size = new System.Drawing.Size(878, 148);
             this.panel25.TabIndex = 21;
             // 
             // panel26
@@ -837,9 +493,10 @@
             this.panel26.Controls.Add(this.button48);
             this.panel26.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel26.ForeColor = System.Drawing.Color.Silver;
-            this.panel26.Location = new System.Drawing.Point(1000, 0);
+            this.panel26.Location = new System.Drawing.Point(667, 0);
+            this.panel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(317, 222);
+            this.panel26.Size = new System.Drawing.Size(211, 148);
             this.panel26.TabIndex = 11;
             // 
             // button45
@@ -854,10 +511,10 @@
             this.button45.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button45.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button45.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button45.Location = new System.Drawing.Point(0, 147);
+            this.button45.Location = new System.Drawing.Point(0, 98);
             this.button45.Margin = new System.Windows.Forms.Padding(0);
             this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(317, 75);
+            this.button45.Size = new System.Drawing.Size(211, 50);
             this.button45.TabIndex = 14;
             this.button45.Text = "$0.00";
             this.button45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -877,10 +534,10 @@
             this.button46.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button46.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button46.Location = new System.Drawing.Point(0, 96);
+            this.button46.Location = new System.Drawing.Point(0, 64);
             this.button46.Margin = new System.Windows.Forms.Padding(0);
             this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(317, 51);
+            this.button46.Size = new System.Drawing.Size(211, 34);
             this.button46.TabIndex = 13;
             this.button46.Text = "$0.00";
             this.button46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -900,10 +557,10 @@
             this.button47.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button47.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button47.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button47.Location = new System.Drawing.Point(0, 44);
+            this.button47.Location = new System.Drawing.Point(0, 29);
             this.button47.Margin = new System.Windows.Forms.Padding(0);
             this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(317, 52);
+            this.button47.Size = new System.Drawing.Size(211, 35);
             this.button47.TabIndex = 12;
             this.button47.Text = "$0.00";
             this.button47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -926,7 +583,7 @@
             this.button48.Location = new System.Drawing.Point(0, 0);
             this.button48.Margin = new System.Windows.Forms.Padding(0);
             this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(317, 44);
+            this.button48.Size = new System.Drawing.Size(211, 29);
             this.button48.TabIndex = 11;
             this.button48.Text = "$0.00";
             this.button48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -943,8 +600,9 @@
             this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel27.ForeColor = System.Drawing.Color.Silver;
             this.panel27.Location = new System.Drawing.Point(0, 0);
+            this.panel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(1317, 222);
+            this.panel27.Size = new System.Drawing.Size(878, 148);
             this.panel27.TabIndex = 10;
             // 
             // button49
@@ -959,10 +617,10 @@
             this.button49.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button49.ForeColor = System.Drawing.Color.White;
             this.button49.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button49.Location = new System.Drawing.Point(0, 96);
+            this.button49.Location = new System.Drawing.Point(0, 64);
             this.button49.Margin = new System.Windows.Forms.Padding(0);
             this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(1317, 51);
+            this.button49.Size = new System.Drawing.Size(878, 34);
             this.button49.TabIndex = 10;
             this.button49.Text = "USAA SAVINGS";
             this.button49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -982,10 +640,10 @@
             this.button50.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button50.ForeColor = System.Drawing.Color.White;
             this.button50.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button50.Location = new System.Drawing.Point(0, 44);
+            this.button50.Location = new System.Drawing.Point(0, 29);
             this.button50.Margin = new System.Windows.Forms.Padding(0);
             this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(1317, 52);
+            this.button50.Size = new System.Drawing.Size(878, 35);
             this.button50.TabIndex = 9;
             this.button50.Text = "USAA CHECKING";
             this.button50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1008,7 +666,7 @@
             this.button51.Location = new System.Drawing.Point(0, 0);
             this.button51.Margin = new System.Windows.Forms.Padding(0);
             this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(1317, 44);
+            this.button51.Size = new System.Drawing.Size(878, 29);
             this.button51.TabIndex = 8;
             this.button51.Text = "CHASE";
             this.button51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1024,8 +682,9 @@
             this.panel28.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel28.ForeColor = System.Drawing.Color.Silver;
             this.panel28.Location = new System.Drawing.Point(0, 0);
+            this.panel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(1317, 174);
+            this.panel28.Size = new System.Drawing.Size(878, 116);
             this.panel28.TabIndex = 18;
             // 
             // panel29
@@ -1036,9 +695,10 @@
             this.panel29.Controls.Add(this.button53);
             this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel29.ForeColor = System.Drawing.Color.Silver;
-            this.panel29.Location = new System.Drawing.Point(644, 0);
+            this.panel29.Location = new System.Drawing.Point(429, 0);
+            this.panel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(673, 174);
+            this.panel29.Size = new System.Drawing.Size(449, 116);
             this.panel29.TabIndex = 13;
             // 
             // circularProgressBar9
@@ -1052,7 +712,8 @@
             this.circularProgressBar9.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar9.InnerMargin = 2;
             this.circularProgressBar9.InnerWidth = -1;
-            this.circularProgressBar9.Location = new System.Drawing.Point(487, 0);
+            this.circularProgressBar9.Location = new System.Drawing.Point(325, 0);
+            this.circularProgressBar9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularProgressBar9.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar9.Name = "circularProgressBar9";
             this.circularProgressBar9.OuterColor = System.Drawing.Color.Gray;
@@ -1061,7 +722,7 @@
             this.circularProgressBar9.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.circularProgressBar9.ProgressWidth = 25;
             this.circularProgressBar9.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.circularProgressBar9.Size = new System.Drawing.Size(186, 174);
+            this.circularProgressBar9.Size = new System.Drawing.Size(124, 116);
             this.circularProgressBar9.StartAngle = 270;
             this.circularProgressBar9.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar9.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -1086,10 +747,10 @@
             this.button52.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button52.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button52.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button52.Location = new System.Drawing.Point(292, 0);
+            this.button52.Location = new System.Drawing.Point(195, 0);
             this.button52.Margin = new System.Windows.Forms.Padding(0);
             this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(166, 174);
+            this.button52.Size = new System.Drawing.Size(111, 116);
             this.button52.TabIndex = 14;
             this.button52.Text = "$0.00";
             this.button52.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1111,7 +772,7 @@
             this.button53.Location = new System.Drawing.Point(0, 0);
             this.button53.Margin = new System.Windows.Forms.Padding(0);
             this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(292, 174);
+            this.button53.Size = new System.Drawing.Size(195, 116);
             this.button53.TabIndex = 11;
             this.button53.Text = "TD_BANK";
             this.button53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1128,8 +789,9 @@
             this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel30.ForeColor = System.Drawing.Color.Silver;
             this.panel30.Location = new System.Drawing.Point(0, 0);
+            this.panel30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(644, 174);
+            this.panel30.Size = new System.Drawing.Size(429, 116);
             this.panel30.TabIndex = 12;
             // 
             // circularProgressBar10
@@ -1143,7 +805,8 @@
             this.circularProgressBar10.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar10.InnerMargin = 2;
             this.circularProgressBar10.InnerWidth = -1;
-            this.circularProgressBar10.Location = new System.Drawing.Point(458, 0);
+            this.circularProgressBar10.Location = new System.Drawing.Point(305, 0);
+            this.circularProgressBar10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularProgressBar10.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar10.Name = "circularProgressBar10";
             this.circularProgressBar10.OuterColor = System.Drawing.Color.Gray;
@@ -1152,7 +815,7 @@
             this.circularProgressBar10.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.circularProgressBar10.ProgressWidth = 25;
             this.circularProgressBar10.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.circularProgressBar10.Size = new System.Drawing.Size(186, 174);
+            this.circularProgressBar10.Size = new System.Drawing.Size(124, 116);
             this.circularProgressBar10.StartAngle = 270;
             this.circularProgressBar10.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar10.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -1177,10 +840,10 @@
             this.button54.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button54.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button54.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button54.Location = new System.Drawing.Point(292, 0);
+            this.button54.Location = new System.Drawing.Point(195, 0);
             this.button54.Margin = new System.Windows.Forms.Padding(0);
             this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(166, 174);
+            this.button54.Size = new System.Drawing.Size(111, 116);
             this.button54.TabIndex = 14;
             this.button54.Text = "$0.00";
             this.button54.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1202,7 +865,7 @@
             this.button55.Location = new System.Drawing.Point(0, 0);
             this.button55.Margin = new System.Windows.Forms.Padding(0);
             this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(292, 174);
+            this.button55.Size = new System.Drawing.Size(195, 116);
             this.button55.TabIndex = 11;
             this.button55.Text = "5";
             this.button55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1217,10 +880,11 @@
             this.pnl4.Controls.Add(this.panel16);
             this.pnl4.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl4.ForeColor = System.Drawing.Color.Silver;
-            this.pnl4.Location = new System.Drawing.Point(3951, 0);
-            this.pnl4.MinimumSize = new System.Drawing.Size(1317, 0);
+            this.pnl4.Location = new System.Drawing.Point(2634, 0);
+            this.pnl4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl4.MinimumSize = new System.Drawing.Size(878, 0);
             this.pnl4.Name = "pnl4";
-            this.pnl4.Size = new System.Drawing.Size(1317, 863);
+            this.pnl4.Size = new System.Drawing.Size(878, 452);
             this.pnl4.TabIndex = 22;
             // 
             // panel2
@@ -1230,9 +894,10 @@
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.ForeColor = System.Drawing.Color.Silver;
-            this.panel2.Location = new System.Drawing.Point(0, 641);
+            this.panel2.Location = new System.Drawing.Point(0, 304);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1317, 222);
+            this.panel2.Size = new System.Drawing.Size(878, 148);
             this.panel2.TabIndex = 21;
             // 
             // panel3
@@ -1244,9 +909,10 @@
             this.panel3.Controls.Add(this.button37);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.ForeColor = System.Drawing.Color.Silver;
-            this.panel3.Location = new System.Drawing.Point(1000, 0);
+            this.panel3.Location = new System.Drawing.Point(667, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(317, 222);
+            this.panel3.Size = new System.Drawing.Size(211, 148);
             this.panel3.TabIndex = 11;
             // 
             // button34
@@ -1261,10 +927,10 @@
             this.button34.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button34.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button34.Location = new System.Drawing.Point(0, 147);
+            this.button34.Location = new System.Drawing.Point(0, 98);
             this.button34.Margin = new System.Windows.Forms.Padding(0);
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(317, 75);
+            this.button34.Size = new System.Drawing.Size(211, 50);
             this.button34.TabIndex = 14;
             this.button34.Text = "$0.00";
             this.button34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1284,10 +950,10 @@
             this.button35.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button35.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.Location = new System.Drawing.Point(0, 96);
+            this.button35.Location = new System.Drawing.Point(0, 64);
             this.button35.Margin = new System.Windows.Forms.Padding(0);
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(317, 51);
+            this.button35.Size = new System.Drawing.Size(211, 34);
             this.button35.TabIndex = 13;
             this.button35.Text = "$0.00";
             this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1307,10 +973,10 @@
             this.button36.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button36.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button36.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button36.Location = new System.Drawing.Point(0, 44);
+            this.button36.Location = new System.Drawing.Point(0, 29);
             this.button36.Margin = new System.Windows.Forms.Padding(0);
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(317, 52);
+            this.button36.Size = new System.Drawing.Size(211, 35);
             this.button36.TabIndex = 12;
             this.button36.Text = "$0.00";
             this.button36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1333,7 +999,7 @@
             this.button37.Location = new System.Drawing.Point(0, 0);
             this.button37.Margin = new System.Windows.Forms.Padding(0);
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(317, 44);
+            this.button37.Size = new System.Drawing.Size(211, 29);
             this.button37.TabIndex = 11;
             this.button37.Text = "$0.00";
             this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1350,8 +1016,9 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.ForeColor = System.Drawing.Color.Silver;
             this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1317, 222);
+            this.panel7.Size = new System.Drawing.Size(878, 148);
             this.panel7.TabIndex = 10;
             // 
             // button38
@@ -1366,10 +1033,10 @@
             this.button38.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.ForeColor = System.Drawing.Color.White;
             this.button38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.Location = new System.Drawing.Point(0, 96);
+            this.button38.Location = new System.Drawing.Point(0, 64);
             this.button38.Margin = new System.Windows.Forms.Padding(0);
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(1317, 51);
+            this.button38.Size = new System.Drawing.Size(878, 34);
             this.button38.TabIndex = 10;
             this.button38.Text = "USAA SAVINGS";
             this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1389,10 +1056,10 @@
             this.button39.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button39.ForeColor = System.Drawing.Color.White;
             this.button39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button39.Location = new System.Drawing.Point(0, 44);
+            this.button39.Location = new System.Drawing.Point(0, 29);
             this.button39.Margin = new System.Windows.Forms.Padding(0);
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(1317, 52);
+            this.button39.Size = new System.Drawing.Size(878, 35);
             this.button39.TabIndex = 9;
             this.button39.Text = "USAA CHECKING";
             this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1415,7 +1082,7 @@
             this.button40.Location = new System.Drawing.Point(0, 0);
             this.button40.Margin = new System.Windows.Forms.Padding(0);
             this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(1317, 44);
+            this.button40.Size = new System.Drawing.Size(878, 29);
             this.button40.TabIndex = 8;
             this.button40.Text = "CHASE";
             this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1431,8 +1098,9 @@
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.ForeColor = System.Drawing.Color.Silver;
             this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1317, 174);
+            this.panel16.Size = new System.Drawing.Size(878, 116);
             this.panel16.TabIndex = 18;
             // 
             // panel23
@@ -1443,9 +1111,10 @@
             this.panel23.Controls.Add(this.button42);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.ForeColor = System.Drawing.Color.Silver;
-            this.panel23.Location = new System.Drawing.Point(644, 0);
+            this.panel23.Location = new System.Drawing.Point(429, 0);
+            this.panel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(673, 174);
+            this.panel23.Size = new System.Drawing.Size(449, 116);
             this.panel23.TabIndex = 13;
             // 
             // circularProgressBar7
@@ -1459,7 +1128,8 @@
             this.circularProgressBar7.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar7.InnerMargin = 2;
             this.circularProgressBar7.InnerWidth = -1;
-            this.circularProgressBar7.Location = new System.Drawing.Point(487, 0);
+            this.circularProgressBar7.Location = new System.Drawing.Point(325, 0);
+            this.circularProgressBar7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularProgressBar7.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar7.Name = "circularProgressBar7";
             this.circularProgressBar7.OuterColor = System.Drawing.Color.Gray;
@@ -1468,7 +1138,7 @@
             this.circularProgressBar7.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.circularProgressBar7.ProgressWidth = 25;
             this.circularProgressBar7.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.circularProgressBar7.Size = new System.Drawing.Size(186, 174);
+            this.circularProgressBar7.Size = new System.Drawing.Size(124, 116);
             this.circularProgressBar7.StartAngle = 270;
             this.circularProgressBar7.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar7.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -1493,10 +1163,10 @@
             this.button41.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button41.Location = new System.Drawing.Point(292, 0);
+            this.button41.Location = new System.Drawing.Point(195, 0);
             this.button41.Margin = new System.Windows.Forms.Padding(0);
             this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(166, 174);
+            this.button41.Size = new System.Drawing.Size(111, 116);
             this.button41.TabIndex = 14;
             this.button41.Text = "$0.00";
             this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1518,7 +1188,7 @@
             this.button42.Location = new System.Drawing.Point(0, 0);
             this.button42.Margin = new System.Windows.Forms.Padding(0);
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(292, 174);
+            this.button42.Size = new System.Drawing.Size(195, 116);
             this.button42.TabIndex = 11;
             this.button42.Text = "TD_BANK";
             this.button42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1535,8 +1205,9 @@
             this.panel24.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel24.ForeColor = System.Drawing.Color.Silver;
             this.panel24.Location = new System.Drawing.Point(0, 0);
+            this.panel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(644, 174);
+            this.panel24.Size = new System.Drawing.Size(429, 116);
             this.panel24.TabIndex = 12;
             // 
             // circularProgressBar8
@@ -1550,7 +1221,8 @@
             this.circularProgressBar8.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar8.InnerMargin = 2;
             this.circularProgressBar8.InnerWidth = -1;
-            this.circularProgressBar8.Location = new System.Drawing.Point(458, 0);
+            this.circularProgressBar8.Location = new System.Drawing.Point(305, 0);
+            this.circularProgressBar8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularProgressBar8.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar8.Name = "circularProgressBar8";
             this.circularProgressBar8.OuterColor = System.Drawing.Color.Gray;
@@ -1559,7 +1231,7 @@
             this.circularProgressBar8.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.circularProgressBar8.ProgressWidth = 25;
             this.circularProgressBar8.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.circularProgressBar8.Size = new System.Drawing.Size(186, 174);
+            this.circularProgressBar8.Size = new System.Drawing.Size(124, 116);
             this.circularProgressBar8.StartAngle = 270;
             this.circularProgressBar8.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar8.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -1584,10 +1256,10 @@
             this.button43.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button43.Location = new System.Drawing.Point(292, 0);
+            this.button43.Location = new System.Drawing.Point(195, 0);
             this.button43.Margin = new System.Windows.Forms.Padding(0);
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(166, 174);
+            this.button43.Size = new System.Drawing.Size(111, 116);
             this.button43.TabIndex = 14;
             this.button43.Text = "$0.00";
             this.button43.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1609,7 +1281,7 @@
             this.button44.Location = new System.Drawing.Point(0, 0);
             this.button44.Margin = new System.Windows.Forms.Padding(0);
             this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(292, 174);
+            this.button44.Size = new System.Drawing.Size(195, 116);
             this.button44.TabIndex = 11;
             this.button44.Text = "4";
             this.button44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1624,10 +1296,11 @@
             this.pnl3.Controls.Add(this.panel20);
             this.pnl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl3.ForeColor = System.Drawing.Color.Silver;
-            this.pnl3.Location = new System.Drawing.Point(2634, 0);
-            this.pnl3.MinimumSize = new System.Drawing.Size(1317, 0);
+            this.pnl3.Location = new System.Drawing.Point(1756, 0);
+            this.pnl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl3.MinimumSize = new System.Drawing.Size(878, 0);
             this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(1317, 863);
+            this.pnl3.Size = new System.Drawing.Size(878, 452);
             this.pnl3.TabIndex = 21;
             // 
             // panel17
@@ -1637,9 +1310,10 @@
             this.panel17.Controls.Add(this.panel19);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel17.ForeColor = System.Drawing.Color.Silver;
-            this.panel17.Location = new System.Drawing.Point(0, 641);
+            this.panel17.Location = new System.Drawing.Point(0, 304);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(1317, 222);
+            this.panel17.Size = new System.Drawing.Size(878, 148);
             this.panel17.TabIndex = 21;
             // 
             // panel18
@@ -1651,9 +1325,10 @@
             this.panel18.Controls.Add(this.button26);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel18.ForeColor = System.Drawing.Color.Silver;
-            this.panel18.Location = new System.Drawing.Point(1000, 0);
+            this.panel18.Location = new System.Drawing.Point(667, 0);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(317, 222);
+            this.panel18.Size = new System.Drawing.Size(211, 148);
             this.panel18.TabIndex = 11;
             // 
             // button19
@@ -1668,10 +1343,10 @@
             this.button19.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(0, 147);
+            this.button19.Location = new System.Drawing.Point(0, 98);
             this.button19.Margin = new System.Windows.Forms.Padding(0);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(317, 75);
+            this.button19.Size = new System.Drawing.Size(211, 50);
             this.button19.TabIndex = 14;
             this.button19.Text = "$0.00";
             this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1691,10 +1366,10 @@
             this.button20.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(0, 96);
+            this.button20.Location = new System.Drawing.Point(0, 64);
             this.button20.Margin = new System.Windows.Forms.Padding(0);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(317, 51);
+            this.button20.Size = new System.Drawing.Size(211, 34);
             this.button20.TabIndex = 13;
             this.button20.Text = "$0.00";
             this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1714,10 +1389,10 @@
             this.button25.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button25.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(0, 44);
+            this.button25.Location = new System.Drawing.Point(0, 29);
             this.button25.Margin = new System.Windows.Forms.Padding(0);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(317, 52);
+            this.button25.Size = new System.Drawing.Size(211, 35);
             this.button25.TabIndex = 12;
             this.button25.Text = "$0.00";
             this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1740,7 +1415,7 @@
             this.button26.Location = new System.Drawing.Point(0, 0);
             this.button26.Margin = new System.Windows.Forms.Padding(0);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(317, 44);
+            this.button26.Size = new System.Drawing.Size(211, 29);
             this.button26.TabIndex = 11;
             this.button26.Text = "$0.00";
             this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1757,8 +1432,9 @@
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.ForeColor = System.Drawing.Color.Silver;
             this.panel19.Location = new System.Drawing.Point(0, 0);
+            this.panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(1317, 222);
+            this.panel19.Size = new System.Drawing.Size(878, 148);
             this.panel19.TabIndex = 10;
             // 
             // button27
@@ -1773,10 +1449,10 @@
             this.button27.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button27.ForeColor = System.Drawing.Color.White;
             this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.Location = new System.Drawing.Point(0, 96);
+            this.button27.Location = new System.Drawing.Point(0, 64);
             this.button27.Margin = new System.Windows.Forms.Padding(0);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(1317, 51);
+            this.button27.Size = new System.Drawing.Size(878, 34);
             this.button27.TabIndex = 10;
             this.button27.Text = "USAA SAVINGS";
             this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1796,10 +1472,10 @@
             this.button28.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button28.ForeColor = System.Drawing.Color.White;
             this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.Location = new System.Drawing.Point(0, 44);
+            this.button28.Location = new System.Drawing.Point(0, 29);
             this.button28.Margin = new System.Windows.Forms.Padding(0);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(1317, 52);
+            this.button28.Size = new System.Drawing.Size(878, 35);
             this.button28.TabIndex = 9;
             this.button28.Text = "USAA CHECKING";
             this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1822,7 +1498,7 @@
             this.button29.Location = new System.Drawing.Point(0, 0);
             this.button29.Margin = new System.Windows.Forms.Padding(0);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(1317, 44);
+            this.button29.Size = new System.Drawing.Size(878, 29);
             this.button29.TabIndex = 8;
             this.button29.Text = "CHASE";
             this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1838,8 +1514,9 @@
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.ForeColor = System.Drawing.Color.Silver;
             this.panel20.Location = new System.Drawing.Point(0, 0);
+            this.panel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(1317, 174);
+            this.panel20.Size = new System.Drawing.Size(878, 116);
             this.panel20.TabIndex = 18;
             // 
             // panel21
@@ -1850,9 +1527,10 @@
             this.panel21.Controls.Add(this.button31);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.ForeColor = System.Drawing.Color.Silver;
-            this.panel21.Location = new System.Drawing.Point(644, 0);
+            this.panel21.Location = new System.Drawing.Point(429, 0);
+            this.panel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(673, 174);
+            this.panel21.Size = new System.Drawing.Size(449, 116);
             this.panel21.TabIndex = 13;
             // 
             // circularProgressBar3
@@ -1866,7 +1544,8 @@
             this.circularProgressBar3.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar3.InnerMargin = 2;
             this.circularProgressBar3.InnerWidth = -1;
-            this.circularProgressBar3.Location = new System.Drawing.Point(487, 0);
+            this.circularProgressBar3.Location = new System.Drawing.Point(325, 0);
+            this.circularProgressBar3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularProgressBar3.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar3.Name = "circularProgressBar3";
             this.circularProgressBar3.OuterColor = System.Drawing.Color.Gray;
@@ -1875,7 +1554,7 @@
             this.circularProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.circularProgressBar3.ProgressWidth = 25;
             this.circularProgressBar3.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.circularProgressBar3.Size = new System.Drawing.Size(186, 174);
+            this.circularProgressBar3.Size = new System.Drawing.Size(124, 116);
             this.circularProgressBar3.StartAngle = 270;
             this.circularProgressBar3.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar3.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -1900,10 +1579,10 @@
             this.button30.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button30.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(292, 0);
+            this.button30.Location = new System.Drawing.Point(195, 0);
             this.button30.Margin = new System.Windows.Forms.Padding(0);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(166, 174);
+            this.button30.Size = new System.Drawing.Size(111, 116);
             this.button30.TabIndex = 14;
             this.button30.Text = "$0.00";
             this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1925,7 +1604,7 @@
             this.button31.Location = new System.Drawing.Point(0, 0);
             this.button31.Margin = new System.Windows.Forms.Padding(0);
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(292, 174);
+            this.button31.Size = new System.Drawing.Size(195, 116);
             this.button31.TabIndex = 11;
             this.button31.Text = "TD_BANK";
             this.button31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1942,8 +1621,9 @@
             this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel22.ForeColor = System.Drawing.Color.Silver;
             this.panel22.Location = new System.Drawing.Point(0, 0);
+            this.panel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(644, 174);
+            this.panel22.Size = new System.Drawing.Size(429, 116);
             this.panel22.TabIndex = 12;
             // 
             // circularProgressBar4
@@ -1957,7 +1637,8 @@
             this.circularProgressBar4.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar4.InnerMargin = 2;
             this.circularProgressBar4.InnerWidth = -1;
-            this.circularProgressBar4.Location = new System.Drawing.Point(458, 0);
+            this.circularProgressBar4.Location = new System.Drawing.Point(305, 0);
+            this.circularProgressBar4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularProgressBar4.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar4.Name = "circularProgressBar4";
             this.circularProgressBar4.OuterColor = System.Drawing.Color.Gray;
@@ -1966,7 +1647,7 @@
             this.circularProgressBar4.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.circularProgressBar4.ProgressWidth = 25;
             this.circularProgressBar4.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.circularProgressBar4.Size = new System.Drawing.Size(186, 174);
+            this.circularProgressBar4.Size = new System.Drawing.Size(124, 116);
             this.circularProgressBar4.StartAngle = 270;
             this.circularProgressBar4.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar4.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -1991,10 +1672,10 @@
             this.button32.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button32.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button32.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button32.Location = new System.Drawing.Point(292, 0);
+            this.button32.Location = new System.Drawing.Point(195, 0);
             this.button32.Margin = new System.Windows.Forms.Padding(0);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(166, 174);
+            this.button32.Size = new System.Drawing.Size(111, 116);
             this.button32.TabIndex = 14;
             this.button32.Text = "$0.00";
             this.button32.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -2016,7 +1697,7 @@
             this.button33.Location = new System.Drawing.Point(0, 0);
             this.button33.Margin = new System.Windows.Forms.Padding(0);
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(292, 174);
+            this.button33.Size = new System.Drawing.Size(195, 116);
             this.button33.TabIndex = 11;
             this.button33.Text = "3";
             this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2024,29 +1705,16 @@
             this.button33.UseCompatibleTextRendering = true;
             this.button33.UseVisualStyleBackColor = false;
             // 
-            // current_panelName
-            // 
-            this.current_panelName.AutoSize = true;
-            this.current_panelName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.current_panelName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.current_panelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.current_panelName.Location = new System.Drawing.Point(357, 0);
-            this.current_panelName.Name = "current_panelName";
-            this.current_panelName.Size = new System.Drawing.Size(110, 55);
-            this.current_panelName.TabIndex = 0;
-            this.current_panelName.Text = "Add";
-            // 
             // form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Fuchsia;
-            this.ClientSize = new System.Drawing.Size(1674, 924);
+            this.ClientSize = new System.Drawing.Size(1116, 493);
             this.Controls.Add(this.container_Pnl);
             this.Controls.Add(this.MENU_PNL);
             this.Controls.Add(this.TOP_PNL);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "form";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -2054,13 +1722,12 @@
             this.TOP_PNL.PerformLayout();
             this.MENU_BTN_PNL.ResumeLayout(false);
             this.MENU_PNL.ResumeLayout(false);
+            this.pnl1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.EDIT_MENU_PNL.ResumeLayout(false);
+            this.EDIT_MENU_PNL.PerformLayout();
             this.pnl2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
+            this.pnl2.PerformLayout();
             this.container_Pnl.ResumeLayout(false);
             this.pnl5.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
@@ -2093,7 +1760,6 @@
         private System.Windows.Forms.Button minBtn;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel MENU_BTN_PNL;
-        private System.Windows.Forms.Button menuBtn5;
         private System.Windows.Forms.Button menuBtn4;
         private System.Windows.Forms.Button menuBtn3;
         private System.Windows.Forms.Button menuBtn2;
@@ -2101,25 +1767,6 @@
         private System.Windows.Forms.Panel MENU_PNL;
         private System.Windows.Forms.Panel pnl1;
         private System.Windows.Forms.Panel pnl2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private CircularProgressBar.CircularProgressBar circularProgressBar1;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Panel panel14;
-        private CircularProgressBar.CircularProgressBar circularProgressBar2;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Panel container_Pnl;
         private System.Windows.Forms.Panel pnl5;
         private System.Windows.Forms.Panel panel25;
@@ -2182,6 +1829,11 @@
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Label current_panelName;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button saveBtn;
+        private System.Windows.Forms.Panel EDIT_MENU_PNL;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
