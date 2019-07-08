@@ -77,12 +77,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Backend\Concept.cs" />
+    <Compile Include="Backend\Def.cs" />
+    <Compile Include="Backend\Fact.cs" />
+    <Compile Include="Backend\ListManager.cs" />
+    <Compile Include="Backend\Main\MainManager.cs" />
+    <Compile Include="Backend\SourcePath.cs" />
+    <Compile Include="Backend\TopicFiles\TopicManager.cs" />
+    <Compile Include="GUI\ADD_TOPIC_FORM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI\ADD_TOPIC_FORM.Designer.cs">
+      <DependentUpon>ADD_TOPIC_FORM.cs</DependentUpon>
     </Compile>
+    <Compile Include="HOME_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOME_FORM.Designer.cs">
+      <DependentUpon>HOME_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Note.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -90,11 +104,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Backend\TopicFiles\Topic.cs" />
     <Compile Include="TransparentPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ADD_TOPIC_FORM.resx">
+      <DependentUpon>ADD_TOPIC_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOME_FORM.resx">
+      <DependentUpon>HOME_FORM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,72 +134,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\4272314 - area comparison mvp.png" />
-    <None Include="Resources\4272313 - chart doughnut percentage pie.png" />
-    <None Include="Resources\4272312 - chart infographic pie statistics.png" />
-    <None Include="Resources\4272311 - analytics chart line point.png" />
-    <None Include="Resources\4272310 - comparison report sales.png" />
-    <None Include="Resources\4272309 - comparison report sales.png" />
-    <None Include="Resources\4272308 - comparison settings slider statistics.png" />
-    <None Include="Resources\4272307 - comparison horizontal statistics.png" />
-    <None Include="Resources\4272306 - percentage power statistics.png" />
-    <None Include="Resources\4272305 - bar chart comparison horizontal total.png" />
-    <None Include="Resources\4272304 - bar chart comparison horizontal total.png" />
-    <None Include="Resources\4272303 - bar chart profit success uptrend.png" />
-    <None Include="Resources\4272302 - chart growth profit success uptrend.png" />
-    <None Include="Resources\4272301 - bar chart growth profit success uptrend.png" />
-    <None Include="Resources\4272300 - chart growth line profit success uptrend.png" />
-    <None Include="Resources\4272299 - bar chart ranking sorting.png" />
-    <None Include="Resources\4272298 - analytics chart comparison horizontal percentage.png" />
-    <None Include="Resources\4272297 - analytics chart comparison percentage vertical.png" />
-    <None Include="Resources\4272296 - ability pentagon statistics.png" />
-    <None Include="Resources\4272295 - analytics frequency peaks.png" />
-    <None Include="Resources\4272294 - chart circle diagram infographic.png" />
-    <None Include="Resources\4272293 - bar chart failure loss.png" />
-    <None Include="Resources\4272292 - chart hierarchy pyramid triangle.png" />
-    <None Include="Resources\4272291 - chart hierarchy pyramid triangle.png" />
-    <None Include="Resources\4272290 - bar graph horizontal sorting.png" />
-    <None Include="Resources\4272289 - chart graph horizontal sorting.png" />
-    <None Include="Resources\4272288 - bar chart graph horizontal sorting.png" />
-    <None Include="Resources\4272287 - block chart equalizer statistics.png" />
-    <None Include="Resources\4272286 - bar chart fluctuating profit.png" />
-    <None Include="Resources\4272285 - bar chart comparison fluctuating.png" />
-    <None Include="Resources\4272284 - bar chart comparison fluctuating.png" />
-    <None Include="Resources\4272283 - chart diagram downtrend loss.png" />
-    <None Include="Resources\4272282 - chart diagram downtrend line loss.png" />
-    <None Include="Resources\4272281 - bankrupt chart downtrend failure loss.png" />
-    <None Include="Resources\4272280 - bar chart diagram downtrend loss.png" />
-    <None Include="Resources\4272279 - comparison percentage score statistics.png" />
-    <None Include="Resources\4272278 - analytics comparison statistics.png" />
-    <None Include="Resources\4272277 - analytics chart comparison doughnut.png" />
-    <None Include="Resources\4272276 - analytics chart comparison data doughnut.png" />
-    <None Include="Resources\4272275 - bar chart comparison data.png" />
-    <None Include="Resources\4272274 - bar chart comparison data.png" />
-    <None Include="Resources\4272273 - axis bar chart profit success.png" />
-    <None Include="Resources\4272272 - analytics comparison data.png" />
-    <None Include="Resources\4272271 - analytics comparison data.png" />
-    <None Include="Resources\4272270 - analytics chart comparison statistics.png" />
-    <None Include="Resources\4272269 - bar chart comparison statistics stock.png" />
-    <None Include="Resources\4272268 - analytics bar chart comparison stock.png" />
-    <None Include="Resources\4272267 - analytics chart wave.png" />
-    <None Include="Resources\4272266 - analytics chart finance.png" />
-    <None Include="Resources\4272265 - chart percentage ranking sorting.png" />
-    <None Include="Resources\4272264 - block chart equalizer statistics.png" />
-    <None Include="Resources\4272263 - area chart uptrend.png" />
-    <None Include="Resources\4272262 - chart horizontal percentage ranking sorting.png" />
-    <None Include="Resources\4272261 - block chart data statistics.png" />
-    <None Include="Resources\4272260 - bitcoin candle loss profit.png" />
-    <None Include="Resources\4272259 - bubble chart circle.png" />
-    <None Include="Resources\4272258 - block chart data.png" />
-    <None Include="Resources\4272257 - area chart comparison mvp.png" />
-    <None Include="Resources\4272256 - annotation chart diagram doughnut legenda.png" />
-    <None Include="Resources\4272255 - analytics chart percentage pie presentation.png" />
-    <None Include="GUI\App Icon64" />
+    <None Include="Resources\images\App Icon64" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\GUI.Finance.Icon\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>

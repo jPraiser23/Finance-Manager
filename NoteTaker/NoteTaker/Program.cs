@@ -16,7 +16,7 @@ namespace GeneralForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new form());
+            Application.Run(new HOME_FORM());
         }
     }
 }
