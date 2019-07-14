@@ -16,12 +16,8 @@ namespace GeneralForm.Backend
 
         public void AddNewTopic(Topic nTopic)
         {
-            //Test:
-
             this.SaveTopic(nTopic, "\\CORE\\coreTopics");
-
         }
-
         public void SaveTopic(Topic topic, string corePath)
         {
             string path = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -41,16 +37,8 @@ namespace GeneralForm.Backend
 
             formatter.Serialize(stream, topic);
             stream.Close();
-
             //TODO: Verify save
-            Stream stream2 = new FileStream(path +"\\"+ topic.name + ".tpc", FileMode.Open, FileAccess.Read);
-            Topic test = (Topic)formatter.Deserialize(stream2);
-
-            Console.WriteLine("Name: " + test.name);
-
-
+            //Stream stream2 = new FileStream(path +"\\"+ topic.name + ".tpc", FileMode.Open, FileAccess.Read);
         }
-
-
     }
 }
