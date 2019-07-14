@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GeneralForm.Backend
 {
     class TopicManager
     {
         //TODO: Create Topic List
+        List<Topic> topics;
+
         //TODO: Load Topic List
 
         public void AddNewTopic(Topic nTopic)
         {
             this.SaveTopic(nTopic, "\\CORE\\coreTopics");
         }
+
         public void SaveTopic(Topic topic, string corePath)
         {
             string path = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -37,8 +37,13 @@ namespace GeneralForm.Backend
 
             formatter.Serialize(stream, topic);
             stream.Close();
+
+
             //TODO: Verify save
             //Stream stream2 = new FileStream(path +"\\"+ topic.name + ".tpc", FileMode.Open, FileAccess.Read);
         }
+
+    
+
     }
 }

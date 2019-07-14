@@ -9,15 +9,14 @@ using System.Windows.Forms;
 
 namespace GeneralForm
 {
-
     public partial class HOME_FORM : Form
     {
         private readonly MainManager main = new MainManager();
         TopicManager topicManager = new TopicManager();
-
         public List<Topic> topics = new List<Topic>();
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect,int nBottomRect,int nWidthEllipse,int nHeightEllipse);
         private bool moving;
         private Point offset;
@@ -26,10 +25,8 @@ namespace GeneralForm
         public HOME_FORM()
         {
             InitializeComponent();
-
             FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-
             panelList.Add(addTopicPnl);
             panelList.Add(addNotePnl);
         }
@@ -46,6 +43,7 @@ namespace GeneralForm
             WindowState = FormWindowState.Minimized;
 
         }
+
         private void TopPnl_MouseDown(object sender, MouseEventArgs e)
         {
             moving = true;
@@ -56,9 +54,7 @@ namespace GeneralForm
         private void TopPnl_MouseMove(object sender, MouseEventArgs e)
         {
             if (!moving)
-            {
                 return;
-            }
 
             int x = original.X + MousePosition.X - offset.X;
             int y = original.Y + MousePosition.Y - offset.Y;
@@ -70,7 +66,6 @@ namespace GeneralForm
             moving = false;
             TOP_PNL.Capture = false;
         }
-
 
         private void MenuBtn1_Click(object sender, EventArgs e)
         {
@@ -105,12 +100,9 @@ namespace GeneralForm
             }
         }
 
-
-        //HERE
         private void UpdateTopicList()
         {
             topicList_TBL.Items.Clear();
-
             foreach (Topic item in topics)
             {
                 topicList_TBL.Items.Add(item.name);
@@ -118,7 +110,5 @@ namespace GeneralForm
             }
             topicList_TBL.Refresh();
         }
-
-
     }
 }
