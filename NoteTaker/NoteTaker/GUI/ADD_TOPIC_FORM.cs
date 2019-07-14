@@ -8,7 +8,10 @@ namespace GeneralForm.GUI
         public ADD_TOPIC_FORM()
         {
             InitializeComponent();
+
         }
+
+
 
         private void Label2_Click(object sender, EventArgs e)
         {
@@ -18,25 +21,18 @@ namespace GeneralForm.GUI
 
         public string nameTopic = "";
         public string definitionTopic = "";
-
+        public Topic topic;
         private void Accept_BTN_Click(object sender, EventArgs e)
         {
-            //Accept New Topic Button
 
             //Validation:
-                //TODO: Add Validation for Topic inputs
-
-            //Valid Return Information:
+            //TODO: Validated topic String inputs
             string nameTopic = name_topic_TB.Text;
             string definitionTopic = definition_topic_TB.Text;
 
-
-            //Return Items to Main form
-            
-            this.nameTopic = nameTopic;
-            this.definitionTopic = definitionTopic;
-            this.DialogResult = DialogResult.OK;
-            this.Hide();
+            topic = new Topic(nameTopic, definitionTopic);
+            DialogResult = DialogResult.OK;
+            Hide();
 
         }
     }

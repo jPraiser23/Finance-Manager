@@ -1,9 +1,6 @@
-﻿using GeneralForm.Backend;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace GeneralForm
 {
@@ -11,8 +8,7 @@ namespace GeneralForm
     public class Topic
     {
         public String name;
-        public String definition { get => definition; set => name = definition; }
-
+        public String definition;
 
         public bool HasSubTopics { get => HasSubTopics; set => HasSubTopics = value; }
         public bool HasConcepts { get => HasConcepts; set => HasConcepts = value; }
@@ -36,12 +32,12 @@ namespace GeneralForm
         {
             this.name = inputName;
         }
-        public Topic(Topic inputTopic)
+
+        public Topic(string inputName, string inputDefinition)
         {
-            this.name = inputTopic.name;
-            this.definition = inputTopic.definition;
+            this.name = inputName;
+            this.definition = inputDefinition;
         }
 
-       
     }
 }
